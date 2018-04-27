@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/kevinbece5/Flashcards.git"
   },
+  "scripts": {
+    "start": "node server.js"
+  },
   "keywords": [
     "flashcards"
   ],
