@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const PORT = process.env.PORT || 5000
 
 const app = express();
 
@@ -28,6 +29,6 @@ app.use((err, req, res, next) => {
     res.render('error');
 });
 
-app.listen(3000, () => {
-    console.log('The application is running on localhost:3000!')
+app.listen(PORT, () => {
+    console.log('The application is running on localhost!')
 });
